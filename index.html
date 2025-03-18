@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Laptop UI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">Laptop Store</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!-- Sign Up and Sign In Modals -->
+<!-- Sign Up and Sign In Modals -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<div id="signinModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign In</h2>
+        <form id="signinForm">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</div>
+
+<!-- Add Sign Up and Sign In buttons to the header -->
+<header>
+    <!-- Existing header content... -->
+    <div class="auth-buttons">
+        <button id="signupBtn">Sign Up</button>
+        <button id="signinBtn">Sign In</button>
+    </div>
+</header>
+</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Experience the Future of Laptops</h1>
+                <p>High-performance, sleek design, and cutting-edge technology.</p>
+                <button class="cta" id="shopNow">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.ibb.co/FJrnpsL/matebook.png" alt="Laptop">
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Laptops</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/816n9hBWHEL._SL1500_.jpg" alt="Ultra Slim Laptop">
+                    <h3>Ultra Slim Laptop</h3>
+                    <p>16.0" Full HD Display, 13th Gen Intel Core.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/81sI6re6MPL._SL1500_.jpg" alt="Gaming Laptop">
+                    <h3>Gaming Laptop</h3>
+                    <p>15.6" 144Hz, NVIDIA GeForce RTX 3050.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61uJRC9yZWL._SL1080_.jpg" alt="Student Laptop">
+                    <h3>Student Laptop</h3>
+                    <p>15.6" 120Hz, Intel i5.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg" alt="MacBook Pro">
+                    <h3>MacBook Pro</h3>
+                    <p>14.2" Liquid Retina XDR, Apple M2 Pro Chip.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/41joEDW7DAL._SX300_SY300_QL70_FMwebp_.jpg" alt="Business Laptop">
+                    <h3>Business Laptop</h3>
+                    <p>14" Full HD, AMD Ryzen 7, 16GB RAM, 512GB SSD.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61XOR7fpbVL._SX679_.jpg" alt="2-in-1 Convertible Laptop">
+                    <h3>Convertible 2-in-1 Laptop</h3>
+                    <p>13.3" OLED Touchscreen, Intel i7, 16GB RAM.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/41o5iwwR1WL._SX300_SY300_QL70_FMwebp_.jpg" alt="MacBook Pro">
+                    <h3>
+                        ASUS Zenbook 14</h3>
+                    <p> 14" 3K OLED , Intel Core Ultra 5, 16GB RAM,1 TB, Win 11</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/510pfCNfE+L._SX679_.jpg" alt="MacBook Pro">
+                    <h3>Lenovo ThinkPad E14</h3>
+                    <p>14" ,16GB RAM,1TB SSD,<BR>Windows 11 Home</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Fake Chat Box -->
+        <div id="chatBox" class="chat-box">
+            <div class="chat-header">
+                <h3>Support Chat</h3> <!-- Added name here -->
+                <button id="closeChat" class="close-chat">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="message bot-message">Hi! How can I help you today?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type a message...">
+                <button id="sendMessage">Send</button>
+            </div>
+        </div>
+<!-- Chat Toggle Button -->
+<button id="chatToggle" class="chat-toggle">
+    <i class="fas fa-comments">Apoyo</i>
+</button>
+
+       <!-- Cart Section -->
+<section id="cart" class="cart-section">
+    <h2>Shopping Cart</h2>
+    <div class="cart-items" id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+        <p class="empty-cart-message">Your cart is currently empty.</p>
+    </div>
+    <div class="cart-total">
+        <p>Total: <span id="cartTotal">$0.00</span></p>
+        <button id="checkoutButton">Checkout</button>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>TechStore is your trusted source for high-performance laptops.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@techstore.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Laptop Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
